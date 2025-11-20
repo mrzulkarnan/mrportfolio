@@ -299,6 +299,63 @@
             60% { transform: translateY(-10px); }
         }
 
+ /* Resume Section */
+        #resume {
+            background: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 80px;
+            width: 1242px;
+    padding-left: 388px;
+        }
+
+        .resume-content {
+            text-align: center;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--accent-blue);
+            background: rgba(0, 242, 254, 0.1);
+            border: 2px solid var(--accent-blue);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+            margin-top: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .resume-btn:hover {
+            background: var(--accent-blue);
+            color: var(--primary-dark);
+            box-shadow: 0 0 40px rgba(0, 242, 254, 0.6);
+            transform: translateY(-5px);
+        }
+        
+        .resume-btn i {
+            font-size: 1.4rem;
+
+        
+
         /* Services Section */
         #services {
             background: var(--secondary-dark);
@@ -902,6 +959,21 @@
         </div>
     </section>
 
+
+     <!-- Resume Section -->
+    <section id="resume">
+        <div class="resume-content scroll-animate">
+            <h2 class="section-title" style="margin-bottom: 1rem;">Resume</h2>
+            <p style="color: var(--text-gray); margin-bottom: 2rem; font-size: 1.1rem;">
+                View my professional experience and qualifications
+            </p>
+            <!-- 📄 REPLACE 'your-resume.pdf' WITH YOUR ACTUAL RESUME FILE PATH -->
+            <a href="Resume - Web Developer (1).pdf" class="resume-btn" target="_blank">
+                <i class="fas fa-file-pdf"></i> See Resume
+            </a>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services">
         <h2 class="section-title scroll-animate">Services</h2>
@@ -963,6 +1035,16 @@
                 </div>
                 <h3>Front_end Development</h3>
                 <p>3d modren designs and front styles </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="service-card scroll-animate">
+                <div class="service-icon">
+                    <i class="fas fa-display"></i>
+                </div>
+                <h3>SEO</h3>
+                <p>Great SEO to rank up your website in 3 months</p>
             </div>
         </div>
     </section>
@@ -1527,6 +1609,7 @@
 
 </body>
 </html>
+
 
 
 
