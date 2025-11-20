@@ -306,9 +306,9 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            height: 80px;
-            width: 1242px;
-    padding-left: 388px;
+            padding: 4rem 10%;
+            width: 100%;
+            min-height: 300px;
         }
 
         .resume-content {
@@ -373,7 +373,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -515,7 +515,7 @@
 
         .projects-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -796,6 +796,14 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            body {
+                cursor: auto;
+            }
+
+            .cursor, .cursor-follower {
+                display: none;
+            }
+
             .mobile-toggle {
                 display: block;
             }
@@ -845,44 +853,11 @@
                 font-size: 0.9rem;
             }
 
+            .resume-content, .about-content {
+                padding: 2rem 1.5rem;
+            }
 
-
-            .slider-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.slider-slide img {
-    width: 100%;
-    display: none;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slider-slide img.active {
-    display: block;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.prev { left: 10px; }
-.next { right: 10px; }
-
-
-
-
-.project-image {
+            .project-image {
     width: 100%;
     height: 200px; /* Adjust this height as needed */
     overflow: hidden;
@@ -1607,4 +1582,3 @@
 
 </body>
 </html>
-
